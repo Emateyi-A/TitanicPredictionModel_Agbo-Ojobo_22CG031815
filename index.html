@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Titanic Survival</title></head>
+<body>
+<h2>Titanic Survival Prediction</h2>
+<form action="/predict" method="post">
+<input type="number" name="age" placeholder="Age" required><br><br>
+<select name="sex">
+<option value="0">Male</option>
+<option value="1">Female</option>
+</select><br><br>
+<input type="number" name="fare" placeholder="Fare" required><br><br>
+<button type="submit">Predict</button>
+</form>
+<h3>{{ prediction }}</h3>
+</body>
+</html>
